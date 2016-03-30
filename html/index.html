@@ -1,15 +1,75 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="icon" type="image/svg+xml" href="./images/right_logo.svg">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="assets/images/right_logo.svg">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="style.css">
-		<title>Pare</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="assets/js/scrollEffects.js"></script>
+		<title>wAlerts</title>
 	</head>
 	<body>
+		<div id="header">
+		</div>
 		<div id="main">
-			<h1>
-				<img id="logo" src="./images/right_logo.svg" alt="~"/>
-			</h1>
+			<img id="logo" src="assets/images/logo2.svg" alt="~"/>
+			<i id="subscribe" class="fa fa-sort-desc fa-fw"></i>
+		</div>
+		<div id="steps">
+			<div id="step1" class="flex-item panel panel-default">
+				<div class="panel-body">
+					1. Subscribe
+					<input type="text" class="form-control" id="number" name="number" placeholder="+x-xxx-xxx-xxxx" required>
+					<button type="button" class="btn btn-primary" id="button_step1" disabled>submit</button>
+				</div>
+				<div id="instruction1" class="panel-body hidden"></br>
+					<i class="fa fa-feed fa-4x"></i></br></br>
+					We take this very seriously.
+					Please check if you recieved a text from us.
+				</div>
+				<div id="instruction5" class="panel-body hidden"></br>
+					<i class="fa fa-home fa-4x"></i> </br></br>
+					A single warning can make a lifetime difference or several lifetime differences.
+				</div>
+			</div>
+			<div id="step2" class="flex-item panel panel-default">
+				<div class="panel-body hidden">
+					2. Confirm your number
+					<input type="text" class="form-control" id="code" name="code" style="text-transform:uppercase" required>
+					<button type="button" class="btn btn-primary" id="button_step2" disabled>submit</button>
+				</div>
+				<div  id="instruction2" class="panel-body"></br>
+					<i class="fa fa-forward fa-4x"></i> </br></br>
+					Using fast and all accessible SMS text message technology, we can notify you of immediate danger.
+				</div>
+				<div  id="instruction6" class="panel-body hidden"></br>
+					<i class="fa fa-globe fa-4x"></i></br></br>
+					Let us know what region you wish to be notified. And we will focus our attention to your location.
+				</div>
+			</div>
+			<div id-"step3" class="flex-item panel panel-default">
+				<div class="panel-body hidden">
+					3. Set your region
+					<select class="form-control" id="country" name="country" required>
+						<option>Ontario - South</option>
+					</select>
+					<select class="form-control" id="region" name="region" required>
+						<option>City of Toronto</option>
+					</select>
+					<button type="button" class="btn btn-primary" id="button_step3">confirm</button>
+				</div>
+				<div  id="instruction3" class="panel-body"></br>
+					<i class="fa fa-heartbeat fa-4x"></i></br></br>
+					Natural disaster, terrorism and accidents can happen anytime and anywhere.
+				</div>
+				<div  id="instruction4" class="panel-body hidden"></br>
+					<i class="fa fa-ambulance fa-4x"></i></br></br>
+					What if I was not there?
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
